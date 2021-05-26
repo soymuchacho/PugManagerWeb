@@ -58,22 +58,31 @@ export default {
                 {
                     icon: "el-icon-lx-home",
                     index: "dashboard",
-                    title: "系统首页"
+                    title: "首页"
                 },
                 {
                     icon: "el-icon-lx-cascades",
-                    index: "table",
-                    title: "基础表格"
-                },
-                {
-                    icon: "el-icon-lx-copy",
-                    index: "tabs",
-                    title: "tab选项卡"
+                    index: "2",
+                    title: "人事管理",
+					subs: [
+						{
+							index: "table",
+							title: "员工管理"
+						},
+						{
+							index: "table",
+							title: "考勤管理"
+						},
+						{
+							index: "table",
+							title: "工资管理"
+						}
+					]
                 },
                 {
                     icon: "el-icon-lx-calendar",
                     index: "3",
-                    title: "表单相关",
+                    title: "订单管理",
                     subs: [
                         {
                             index: "form",
@@ -144,6 +153,11 @@ export default {
                         }
                     ]
                 },
+                {
+                    icon: "el-icon-lx-copy",
+                    index: "tabs",
+                    title: "消息"
+				},
                 {
                     icon: "el-icon-lx-redpacket_fill",
                     index: "/donate",
